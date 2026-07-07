@@ -25,11 +25,8 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
 </head>
-<!-- Botón de WhatsApp -->
-<a href="https://wa.me/56976423815" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-<body>
+
+     <body>
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
@@ -520,5 +517,43 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+<!-- ===========================
+     BOTÓN FLOTANTE WHATSAPP
+=========================== -->
 
+<a href="https://wa.me/56976423815" class="whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<style>
+/* ===========================
+   BOTÓN FLOTANTE WHATSAPP
+=========================== */
+
+.whatsapp{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,.35);
+    z-index: 999999;
+    transition: all .3s ease;
+}
+
+.whatsapp:hover{
+    background-color: #20ba5a;
+    color: #fff;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+</style>
 </html>
